@@ -6,7 +6,6 @@
     margin: 2%;
     letter-spacing: -.0028rem;
     font-size: 100%;
-    line-height: 1.75;
 }
 
 @font-face {
@@ -28,10 +27,10 @@
     color:maroon; 
     background-color:crimson;
     display:table;
-    padding: 0.5rem;
+    padding: 0rem;
     padding-left: 3rem;
     padding-right: 3rem;
-    background-size: 40%;
+    background-size: 30%;
     font-family: "Zilla Slab", Helvetica, sans-serif;
     font-weight: bold;
     text-align: center;   
