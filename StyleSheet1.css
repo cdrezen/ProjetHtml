@@ -3,9 +3,9 @@
     font-family: Arial, Helvetica, sans-serif;
     background-color:lightskyblue;
     color: #212121;
-    margin: 2%;
     letter-spacing: -.0028rem;
     font-size: 100%;
+    margin: auto;
 }
 
 @font-face {
@@ -22,18 +22,89 @@
     src: url("zilla-slab/woff2/ZillaSlab-Regular.woff2") format("woff2");
    }
 
+.bandeau
+{
+    background-image: url(blueprint.png), linear-gradient(to bottom, #1f4d78, #1862a7);
+    background-color: #1f4d78;
+    color: #fff;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.logo
+{
+    position: relative;
+    border-radius: 4rem;
+    border: solid 0.5rem rgb(5, 163, 255);
+    width: 4rem;
+    height: 4rem; 
+    vertical-align:-0.75rem;
+    display: inline-block;
+    margin-right: 1rem;
+    border-right-color:transparent;
+    z-index: 2;
+    /*animation:rotate 1s normal infinite;
+    animation-direction: alternate;*/
+}
+
+.logo-bar
+{
+    position: relative;
+    border-radius: 4rem;
+    border: solid 0.5rem transparent;
+    width: 4rem;
+    height: 4rem; 
+    vertical-align:-0.75rem;
+    display: inline-block;
+    margin-left: -5.95rem;
+    margin-right: 1rem;
+    /*border-right-color: rgb(5, 163, 255);
+    border-right-style: dashed;*/
+    border-right-color: rgb(23, 133, 197);
+    z-index: 3;
+    animation: tour 2s infinite;
+    animation-direction: alternate;
+}
+
+.logo-bar1
+{
+    position:static;
+    border-radius: 4rem;
+    border: solid 0.75rem transparent;
+    width: 4rem;
+    height: 4rem; 
+    vertical-align:-0.75rem;
+    display: inline-block;
+    margin-left: -6.25rem;
+    margin-bottom: -0.25rem;
+    margin-right: 1rem;
+    /*border-right-color:rgb(0, 127, 201);
+    border-right-style: groove;*/
+    border-left-color: rgb(0, 162, 255);
+    border-left-style:double;
+    z-index: 1;
+    animation: tour 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes tour 
+{
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
 .titre
 {
-    color:maroon; 
-    background-color:crimson;
-    display:table;
+    color: #fff;
+    display:inline-block;
     padding: 0rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    background-size: 30%;
-    font-family: "Zilla Slab", Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;   
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .morceau-titre
@@ -53,13 +124,14 @@
 {
     padding-right: 25%;
     margin-right: 25%;
+    margin-left: 2%;
     text-align: left;
 }
 
 .page-class h1, h2, h3
 {
     color: #0e415a;
-    font-family: "Zilla Slab";
+    font-family: 'Zilla Slab';
 }
 
 .page-class h2
