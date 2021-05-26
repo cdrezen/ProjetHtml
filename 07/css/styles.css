@@ -24,7 +24,7 @@
 
 .bandeau
 {
-    background-image: url(blueprint.png), linear-gradient(to bottom, #1f4d78, #1862a7);
+    background-image: url(../images/blueprint.png), linear-gradient(to bottom, #1f4d78, #1862a7);
     background-color: #1f4d78;
     color: #fff;
     display: block;
@@ -122,8 +122,9 @@
 
 .page-class
 {
-    padding-right: 25%;
-    margin-right: 25%;
+    /*padding-right: 25%;
+    margin-right: 25%;*/
+    display: flex;
     margin-left: 2%;
     text-align: left;
 }
@@ -154,19 +155,52 @@ section.carte
 }
 
 .sidebar {
-    width: 25%;
+    width: 20%;
+    height: 100%;
     padding-left: .5rem;
-    margin-left: .5rem;
+    margin-left: .5rem;   
     float: right;
     box-shadow: inset 5px 0 5px -5px #29627e;
     font-style: italic;
-    color: #29627e;
+    color: #29627e;   
 }
 
 .sidebar > p {
     margin: .1rem;
 }
 
-p {
-    font-family: 'Fira Sans', sans-serif;
+.sidebar #menu
+{
+    display: none;
+}
+
+.sidebar .bar
+{
+    background-color: #fff;
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.6rem 0.5rem;
+}
+
+.sidebar #sandwich-menucheck
+{
+    display: none;
+}
+
+.sidebar #sandwich-menucheck:checked + .sandwich-label
+{
+    transform: rotate(90deg);
+}
+
+.sidebar #sandwich-menucheck:checked~#menu
+{
+    display: block;
+}
+
+.sidebar .sandwich-label
+{
+    position: absolute;
+    right: 0rem;
+    top: 7rem;
+    display: inline-block;
 }
