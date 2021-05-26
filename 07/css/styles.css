@@ -12,14 +12,14 @@
     font-family: "Zilla Slab";
     font-style: normal;
     font-weight: bold;
-    src: url("zilla-slab/woff2/ZillaSlab-Bold.woff2") format("woff2");
+    src: url("polices/zilla-slab/woff2/ZillaSlab-Bold.woff2") format("woff2");
    }
 
 @font-face {
     font-family: "Zilla Slab";
     font-style: normal;
     font-weight: normal;
-    src: url("zilla-slab/woff2/ZillaSlab-Regular.woff2") format("woff2");
+    src: url("polices/zilla-slab/woff2/ZillaSlab-Regular.woff2") format("woff2");
    }
 
 .bandeau
