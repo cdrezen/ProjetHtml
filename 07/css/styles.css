@@ -128,7 +128,7 @@
     /*padding-right: 25%;
     margin-right: 25%;*/
     display: flex;
-    margin-left: 2%;
+    margin: 2%;
     text-align: left;
     position: relative;
     box-sizing: border-box;
@@ -168,6 +168,40 @@ section.carte
     margin: .1rem;
 }
 
+.sidebar #sandwich-menucheck
+{
+    display: none;
+}
+
+.sidebar .sandwich-label
+{
+    position:absolute;
+    right: 0rem;
+    top: 7rem;
+    display:block;
+    z-index: 4;
+}
+
+.sidebar .bar
+{
+    background-color: rgb(42, 177, 255);
+    width: 2rem;
+    height: 0.2rem;
+    margin: 0.6rem 0.5rem;
+    z-index: 4;
+    position: relative;
+}
+
+.sidebar .sandwich-label:hover .bar
+{
+    background-color:rgb(164, 219, 252);
+}
+
+.sidebar #sandwich-menucheck:checked + .sandwich-label
+{
+    transform: rotate(90deg);
+}
+
 .sidebar #menu
 {
     display: none;
@@ -181,38 +215,10 @@ section.carte
     z-index: 4;
     float: right;
     height: 100vh;
-}
-
-.sidebar .bar
-{
-    background-color: #fff;
-    width: 2rem;
-    height: 0.2rem;
-    margin: 0.6rem 0.5rem;
-    z-index: 4;
-    position: relative;
-}
-
-.sidebar #sandwich-menucheck
-{
-    display: none;
-}
-
-.sidebar #sandwich-menucheck:checked + .sandwich-label
-{
-    transform: rotate(90deg);
+    user-select: none;
 }
 
 .sidebar #sandwich-menucheck:checked~#menu
 {
     display: block;
-}
-
-.sidebar .sandwich-label
-{
-    position:absolute;
-    right: 0rem;
-    top: 7rem;
-    display:block;
-    z-index: 4;
 }
