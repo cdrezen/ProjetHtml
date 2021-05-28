@@ -38,6 +38,7 @@
     grid-column-end: 4;
     display: inline-block;
     max-width: 100%;
+    white-space:nowrap;
 }
 
 .logo
@@ -256,7 +257,7 @@ section.carte
 
 .zimg
 {
-    max-width: 75%;
+    max-width: 100%;
     text-align: left;
     display: block;
     left: 0;
